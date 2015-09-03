@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.card {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+ .card_left {
+  width: 50%;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+}
+ .card_left img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+ .card_right {
+  width: 50%;
+  float: left;
+  background: #083045;
+  height: 100vh;
+
+}
+ .card_right h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 10vh;
+  margin: 30px 0 0 0;
+  padding: 0 0 0 40px;
+  letter-spacing: 1px;
+}
+ .card_right__details ul {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+  margin: 10px 0 0 0;
+}
+ .card_right__details ul li {
+  display: inline;
+  color: #e3e3e3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 5vh;
+  padding: 0 40px 0 0;
+}
+ .card_right__rating__stars {
+  position: relative;
+  right: 160px;
+  margin: 10px 0 10px 0;
+  
+}
+ /***** CSS Magic to Highlight Stars on Hover *****/
+  /* hover previous stars in list
+ .card_right__rating__stars fieldset,  .card_right__rating__stars label {
+  margin: 0;
+  padding: 0;
+}
+ .card_right__rating__stars .rating {
+  border: none;
+}
+ .card_right__rating__stars .rating > input {
+  display: none;
+}
+ .card_right__rating__stars .rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  display: inline-block;
+  content: "\f005";
+  font-family: FontAwesome;
+}
+ .card_right__rating__stars .rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+ .card_right__rating__stars .rating > label {
+  color: #ddd;
+  float: right;
+}
+ .card_right__rating__stars .rating > input:checked ~ label,
+ .card_right__rating__stars .rating:not(:checked) > label:hover,
+ .card_right__rating__stars .rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+ .card_right__rating__stars .rating > input:checked + label:hover,
+ .card_right__rating__stars .rating > input:checked ~ label:hover,
+ .card_right__rating__stars .rating > label:hover ~ input:checked ~ label,
+ .card_right__rating__stars .rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}*/
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+  padding-left: 40px;
+  font-size:3vh;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 2vw;
+}
+
+.rating span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+}
+
+
+ .card_right__review p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vh;
+  padding: 0 40px 0 40px;
+  letter-spacing: 1px;
+  margin: 10px 0 10px 0;
+  line-height: 3.5vh;
+}
+ .card_right__review a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 0 0 0 40px;
+  color: #ffda00;
+  margin: 0;
+}
+
+body .card_right__button {
+  padding: 0 0 0 40px;
+  margin: 30px 0 0 0;
+}
+body .card_right__button h2 {
+  color: #ffda00;
+  width:20vw;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 10px 0px 0px;
+  font-size: 3vh;
+  border-radius: 5px;
+  margin: 0;
+
+}
+body .card_right__button p {
+  color: #ffda00;
+  width:20vw;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 10px 0px 0px;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  margin: 0;
+
+}
+hr {
+  border: 0;
+  height: 1vh;
+  background-color:#ffda00;
+  width: 20vw;
+ text-align:left;margin-left:0
+}
